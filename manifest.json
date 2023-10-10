@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "My mighty chrome extension",
+    "description": "-",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+	"host_permissions": ["https://*/*"],
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "scripting",
+		"tabs"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    }
+}
